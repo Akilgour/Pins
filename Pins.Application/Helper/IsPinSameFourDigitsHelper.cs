@@ -2,7 +2,7 @@
 
 namespace Pins.Application.Helper
 {
-    public class IsPinSameFourDigitsHelper
+    public class IsPINSameFourDigitsHelper
     {
         public static bool Resolve(string pin)
         {

@@ -44,7 +44,7 @@
     <Compile Include="Factory\NewPinFactory.cs" />
     <Compile Include="Helper\IsPINConsecutiveAccendingNumbersHelpers.cs" />
     <Compile Include="Helper\IsPINConsecutiveDescendingNumbersHelpers.cs" />
-    <Compile Include="Helper\IsPinSameFourDigitsHelper.cs" />
+    <Compile Include="Helper\IsPINSameFourDigitsHelper.cs" />
     <Compile Include="Helper\IsPINUniqueHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

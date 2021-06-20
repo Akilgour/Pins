@@ -61,7 +61,7 @@
     <Compile Include="Factory\NewPinFactory.cs" />
     <Compile Include="Helper\IsPINConsecutiveAccendingNumbersHelperTest.cs" />
     <Compile Include="Helper\IsPINConsecutiveDescendingNumbersHelperTest.cs" />
-    <Compile Include="Helper\IsPinSameFourDigitsHelperTest.cs" />
+    <Compile Include="Helper\IsPINSameFourDigitsHelperTest.cs" />
     <Compile Include="Helper\IsPINUniqueHelperTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
