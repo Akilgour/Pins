@@ -58,7 +58,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Factory\NewPinFactory.cs" />
+    <Compile Include="Helper\IsNewPINValidHelperTest.cs" />
     <Compile Include="Helper\IsPINConsecutiveAccendingNumbersHelperTest.cs" />
     <Compile Include="Helper\IsPINConsecutiveDescendingNumbersHelperTest.cs" />
     <Compile Include="Helper\IsPINSameFourDigitsHelperTest.cs" />
@@ -73,10 +73,13 @@
       <Project>{A21F4231-36B4-462C-8451-276A36587151}</Project>
       <Name>Pins.Application</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Pins.Domain.Shared\Pins.Domain.Shared.csproj">
-      <Project>{2F9FD5B6-D40A-4100-9B6E-6E030E16AC3C}</Project>
-      <Name>Pins.Domain.Shared</Name>
+    <ProjectReference Include="..\Pins.Domain\Pins.Domain.csproj">
+      <Project>{0F76B4C0-24C0-402D-B60A-24AEC565D432}</Project>
+      <Name>Pins.Domain</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Factory\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

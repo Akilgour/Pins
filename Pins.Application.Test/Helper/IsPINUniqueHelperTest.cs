@@ -1,7 +1,7 @@
 ﻿using NSubstitute;
 using NUnit.Framework;
 using Pins.Application.Helper;
-using Pins.Domain.Shared.Repository;
+using Pins.Domain.Repository.Interfaces;
 
 namespace Pins.Application.Test.Helper
 {
@@ -14,7 +14,7 @@ namespace Pins.Application.Test.Helper
         {
             //arrange
             var pinsRepository = Substitute.For<IPinsRepository>();
-            pinsRepository.IsAnyByPIN("1234").Returns(true);
+            pinsRepository.IsAnyByPIN("2340").Returns(true);
             pinsRepository.IsAnyByPIN("7890").Returns(false);
 
             //act

@@ -1,13 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Pins.Application.Factory
 {
-    public class NewPinFactory
+    public static class NewPinFactory
     {
-        
+        public static string Resolve()
+        {
+            var random = new Random();
+            return random.Next(0, 9999).ToString("D4");
+        }
     }
 }

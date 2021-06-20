@@ -1,4 +1,4 @@
-﻿using Pins.Domain.Shared.Repository;
+﻿using Pins.Domain.Repository.Interfaces;
 
 namespace Pins.Application.Helper
 {

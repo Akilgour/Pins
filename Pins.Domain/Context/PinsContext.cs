@@ -8,6 +8,6 @@ namespace Pins.Domain.Context
         public PinsContext() 
         { }
 
-        public IDbSet<Pin> Pins { get; set; }
+        public IDbSet<PinLog> PinLogs { get; set; }
     }
 }

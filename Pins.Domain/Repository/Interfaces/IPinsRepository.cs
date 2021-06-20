@@ -1,7 +1,7 @@
-﻿using System.Threading.Tasks;
- 
+﻿using Pins.Domain.Model;
+using System.Threading.Tasks;
 
-namespace Pins.Domain.Shared.Repository
+namespace Pins.Domain.Repository.Interfaces
 {
     public interface IPinsRepository
     {
