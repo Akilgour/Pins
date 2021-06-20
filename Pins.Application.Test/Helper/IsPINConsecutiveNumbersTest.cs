@@ -25,7 +25,7 @@ namespace Pins.Application.Test.Helper
         [TestCase("1357")]
         [TestCase("2852")]
         [TestCase("4321")]
-        public void Resolve_NOtConsecutiveNumbers(string pin)
+        public void Resolve_NotConsecutiveNumbers(string pin)
         {
             //arrange
 
