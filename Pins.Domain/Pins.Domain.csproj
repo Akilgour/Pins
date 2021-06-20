@@ -60,6 +60,7 @@
     <Compile Include="Model\BaseModel.cs" />
     <Compile Include="Model\Pin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\PinsRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -69,6 +70,12 @@
     <EmbeddedResource Include="Migrations\202106202100065_InitialCreate.resx">
       <DependentUpon>202106202100065_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Pins.Domain.Shared\Pins.Domain.Shared.csproj">
+      <Project>{2F9FD5B6-D40A-4100-9B6E-6E030E16AC3C}</Project>
+      <Name>Pins.Domain.Shared</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

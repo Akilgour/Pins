@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pins.Domain", "Pins.Domain\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pins.Application.Test", "Pins.Application.Test\Pins.Application.Test.csproj", "{868E8B19-455A-4131-A394-F9D94D7BF407}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pins.Domain.Shared", "Pins.Domain.Shared\Pins.Domain.Shared.csproj", "{2F9FD5B6-D40A-4100-9B6E-6E030E16AC3C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{868E8B19-455A-4131-A394-F9D94D7BF407}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{868E8B19-455A-4131-A394-F9D94D7BF407}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{868E8B19-455A-4131-A394-F9D94D7BF407}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F9FD5B6-D40A-4100-9B6E-6E030E16AC3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F9FD5B6-D40A-4100-9B6E-6E030E16AC3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F9FD5B6-D40A-4100-9B6E-6E030E16AC3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F9FD5B6-D40A-4100-9B6E-6E030E16AC3C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +61,7 @@ Global
 		{EAD60F50-7AAA-4AEE-A0A4-0C932DEB4730} = {1D6F47CD-C76F-4360-BFFD-E1C6FA455C8F}
 		{0F76B4C0-24C0-402D-B60A-24AEC565D432} = {1D6F47CD-C76F-4360-BFFD-E1C6FA455C8F}
 		{868E8B19-455A-4131-A394-F9D94D7BF407} = {FBABD5B1-35AE-4662-A8E7-14DECCCC1D9F}
+		{2F9FD5B6-D40A-4100-9B6E-6E030E16AC3C} = {1D6F47CD-C76F-4360-BFFD-E1C6FA455C8F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4CD6F171-DBA3-48E7-84ED-9DBA5EEB0381}
