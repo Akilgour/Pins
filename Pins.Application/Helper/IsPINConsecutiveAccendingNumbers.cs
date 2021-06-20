@@ -2,7 +2,7 @@
 
 namespace Pins.Application.Helper
 {
-    public static class IsPINConsecutiveNumbers
+    public static class IsPINConsecutiveAccendingNumbers
     {
         public static bool Resolve(string pin)
         {

@@ -49,7 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Factory\NewPinFactory.cs" />
-    <Compile Include="Helper\IsPINConsecutiveNumbersTest.cs" />
+    <Compile Include="Helper\IsPINConsecutiveAccendingNumbersTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -42,7 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Factory\NewPinFactory.cs" />
-    <Compile Include="Helper\IsPINConsecutiveNumbers.cs" />
+    <Compile Include="Helper\IsPINConsecutiveAccendingNumbers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
