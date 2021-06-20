@@ -9,7 +9,7 @@ namespace Pins.Application.Test.Helper
         [TestCase("1234")]
         [TestCase("2345")]
         [TestCase("5678")]
-        public void Resolve_ConsecutiveNumbers(string pin)
+        public void Resolve_ConsecutiveAccendingNumbers(string pin)
         {
             //arrange
 
@@ -25,7 +25,7 @@ namespace Pins.Application.Test.Helper
         [TestCase("1357")]
         [TestCase("2852")]
         [TestCase("4321")]
-        public void Resolve_NotConsecutiveNumbers(string pin)
+        public void Resolve_NotConsecutiveAccendingNumbers(string pin)
         {
             //arrange
 
