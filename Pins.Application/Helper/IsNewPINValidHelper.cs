@@ -4,12 +4,12 @@ namespace Pins.Application.Helper
 {
     public class IsNewPINValidHelper
     {
-        public static bool Resolve(string pin, IPinsRepository pinsRepository)
+        public static bool Resolve(string PIN, IPinsRepository pinsRepository)
         {
-            if (IsPINConsecutiveAccendingNumbersHelpers.Resolve(pin) ||
-                IsPINConsecutiveDescendingNumbersHelpers.Resolve(pin) ||
-                IsPINSameFourDigitsHelper.Resolve(pin) ||
-                IsPINUniqueHelper.Resolve(pin, pinsRepository))
+            if (IsPINConsecutiveAccendingNumbersHelpers.Resolve(PIN) ||
+                IsPINConsecutiveDescendingNumbersHelpers.Resolve(PIN) ||
+                IsPINSameFourDigitsHelper.Resolve(PIN) ||
+                IsPINUniqueHelper.Resolve(PIN, pinsRepository))
             {
                 return false;
             }

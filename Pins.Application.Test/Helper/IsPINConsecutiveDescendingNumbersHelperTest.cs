@@ -9,12 +9,12 @@ namespace Pins.Application.Test.Helper
         [TestCase("8765")]
         [TestCase("4321")]
         [TestCase("3210")]
-        public void Resolve_ConsecutiveDescendingNumbers(string pin)
+        public void Resolve_ConsecutiveDescendingNumbers(string PIN)
         {
             //arrange
 
             //act
-            var value = IsPINConsecutiveDescendingNumbersHelpers.Resolve(pin);
+            var value = IsPINConsecutiveDescendingNumbersHelpers.Resolve(PIN);
             //assert
             Assert.IsTrue(value);
         }
@@ -23,12 +23,12 @@ namespace Pins.Application.Test.Helper
         [TestCase("7890")]
         [TestCase("1369")]
         [TestCase("9753")]
-        public void Resolve_NotConsecutiveDescendingNumbers(string pin)
+        public void Resolve_NotConsecutiveDescendingNumbers(string PIN)
         {
             //arrange
 
             //act
-            var value = IsPINConsecutiveDescendingNumbersHelpers.Resolve(pin);
+            var value = IsPINConsecutiveDescendingNumbersHelpers.Resolve(PIN);
             //assert
             Assert.IsFalse(value);
         }

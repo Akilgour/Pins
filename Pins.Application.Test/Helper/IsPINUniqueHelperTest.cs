@@ -10,7 +10,7 @@ namespace Pins.Application.Test.Helper
     {
         [TestCase("1234", true)]
         [TestCase("7890", false)]
-        public void Resolve_SameFourDigits(string pin, bool expected)
+        public void Resolve_SameFourDigits(string PIN, bool expected)
         {
             //arrange
             var pinsRepository = Substitute.For<IPinsRepository>();
@@ -18,7 +18,7 @@ namespace Pins.Application.Test.Helper
             pinsRepository.IsAnyByPIN("7890").Returns(false);
 
             //act
-            var value = IsPINUniqueHelper.Resolve(pin, pinsRepository);
+            var value = IsPINUniqueHelper.Resolve(PIN, pinsRepository);
             //assert
             Assert.AreEqual(expected, value);
         }

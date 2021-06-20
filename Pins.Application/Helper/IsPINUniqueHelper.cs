@@ -4,6 +4,6 @@ namespace Pins.Application.Helper
 {
     public class IsPINUniqueHelper
     {
-        public static bool Resolve(string pin, IPinsRepository pinsRepository) => pinsRepository.IsAnyByPIN(pin);
+        public static bool Resolve(string PIN, IPinsRepository pinsRepository) => pinsRepository.IsAnyByPIN(PIN);
     }
 }

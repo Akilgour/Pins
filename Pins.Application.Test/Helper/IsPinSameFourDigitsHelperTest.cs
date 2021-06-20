@@ -9,12 +9,12 @@ namespace Pins.Application.Test.Helper
         [TestCase("1111")]
         [TestCase("5555")]
         [TestCase("9999")]
-        public void Resolve_SameFourDigits(string pin)
+        public void Resolve_SameFourDigits(string PIN)
         {
             //arrange
 
             //act
-            var value = IsPINSameFourDigitsHelper.Resolve(pin);
+            var value = IsPINSameFourDigitsHelper.Resolve(PIN);
             //assert
             Assert.True(value);
         }
@@ -25,12 +25,12 @@ namespace Pins.Application.Test.Helper
         [TestCase("1110")]
         [TestCase("1010")]
         [TestCase("1357")]
-        public void Resolve_NotSameFourDigits(string pin)
+        public void Resolve_NotSameFourDigits(string PIN)
         {
             //arrange
 
             //act
-            var value = IsPINSameFourDigitsHelper.Resolve(pin);
+            var value = IsPINSameFourDigitsHelper.Resolve(PIN);
             //assert
             Assert.IsFalse(value);
         }

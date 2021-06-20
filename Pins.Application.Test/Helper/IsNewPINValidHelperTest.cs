@@ -20,14 +20,14 @@ namespace Pins.Application.Test.Helper
         [TestCase("5555")]
         [TestCase("9999")]
         [TestCase("2340")]
-        public void Resolve_NotAValidPin(string pin)
+        public void Resolve_NotAValidPin(string PIN)
         {
             //arrange
             var pinsRepository = Substitute.For<IPinsRepository>();
             pinsRepository.IsAnyByPIN("2340").Returns(true);
 
             //act
-            var value = IsNewPINValidHelper.Resolve(pin, pinsRepository);
+            var value = IsNewPINValidHelper.Resolve(PIN, pinsRepository);
             //assert
             Assert.False(value);
         }
@@ -37,13 +37,13 @@ namespace Pins.Application.Test.Helper
         [TestCase("1230")]
         [TestCase("7890")]
         [TestCase("5554")]
-        public void Resolve_ValidPin(string pin)
+        public void Resolve_ValidPin(string PIN)
         {
             //arrange
             var pinsRepository = Substitute.For<IPinsRepository>();
             pinsRepository.IsAnyByPIN("2340").Returns(true);
             //act
-            var value = IsNewPINValidHelper.Resolve(pin, pinsRepository);
+            var value = IsNewPINValidHelper.Resolve(PIN, pinsRepository);
             //assert
             Assert.IsTrue(value);
         }

@@ -8,15 +8,15 @@ namespace Pins.Application.Factory
     {
         public static async Task<string> Resolve(IPinsRepository pinsRepository)
         {
-            string pin;
+            string PIN;
             bool validPin;
             do
             {
-                pin = NewPinFactory.Resolve();
-                validPin = IsNewPINValidHelper.Resolve(pin, pinsRepository);
+                PIN = NewPinFactory.Resolve();
+                validPin = IsNewPINValidHelper.Resolve(PIN, pinsRepository);
             } while (!validPin);
-            await pinsRepository.Create(PinFactory.Resolve(pin));
-            return pin;
+            await pinsRepository.Create(PinFactory.Resolve(PIN));
+            return PIN;
         }
     }
 }
