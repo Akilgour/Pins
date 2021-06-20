@@ -5,7 +5,7 @@ namespace Pins.Domain.Repository.Interfaces
 {
     public interface IPinsRepository
     {
-        bool IsAnyByPIN(string pin);
+        Task<bool> IsAnyByPIN(string pin);
         Task Create(PinLog pin);
     }
 }

@@ -12,7 +12,7 @@ namespace Pins.Domain.Repository
             throw new NotImplementedException();
         }
 
-        public bool IsAnyByPIN(string pin)
+        public Task<bool> IsAnyByPIN(string pin)
         {
             throw new NotImplementedException();
         }

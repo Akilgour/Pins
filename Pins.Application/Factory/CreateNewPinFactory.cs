@@ -13,7 +13,7 @@ namespace Pins.Application.Factory
             do
             {
                 PIN = NewPinFactory.Resolve();
-                validPin = IsNewPINValidHelper.Resolve(PIN, pinsRepository);
+                validPin = await IsNewPINValidHelper.Resolve(PIN, pinsRepository);
             } while (!validPin);
             await pinsRepository.Create(PinFactory.Resolve(PIN));
             return PIN;

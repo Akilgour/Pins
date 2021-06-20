@@ -1,15 +1,16 @@
 ﻿using Pins.Domain.Repository.Interfaces;
+using System.Threading.Tasks;
 
 namespace Pins.Application.Helper
 {
     public class IsNewPINValidHelper
     {
-        public static bool Resolve(string PIN, IPinsRepository pinsRepository)
+        public static async Task<bool> Resolve(string PIN, IPinsRepository pinsRepository)
         {
             if (IsPINConsecutiveAccendingNumbersHelpers.Resolve(PIN) ||
                 IsPINConsecutiveDescendingNumbersHelpers.Resolve(PIN) ||
                 IsPINSameFourDigitsHelper.Resolve(PIN) ||
-                IsPINUniqueHelper.Resolve(PIN, pinsRepository))
+                await IsPINUniqueHelper.Resolve(PIN, pinsRepository))
             {
                 return false;
             }

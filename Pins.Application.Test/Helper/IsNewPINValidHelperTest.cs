@@ -2,6 +2,7 @@
 using NUnit.Framework;
 using Pins.Application.Helper;
 using Pins.Domain.Repository.Interfaces;
+using System.Threading.Tasks;
 
 namespace Pins.Application.Test.Helper
 {
@@ -20,14 +21,14 @@ namespace Pins.Application.Test.Helper
         [TestCase("5555")]
         [TestCase("9999")]
         [TestCase("2340")]
-        public void Resolve_NotAValidPin(string PIN)
+        public async Task Resolve_NotAValidPin(string PIN)
         {
             //arrange
             var pinsRepository = Substitute.For<IPinsRepository>();
             pinsRepository.IsAnyByPIN("2340").Returns(true);
 
             //act
-            var value = IsNewPINValidHelper.Resolve(PIN, pinsRepository);
+            var value = await IsNewPINValidHelper.Resolve(PIN, pinsRepository);
             //assert
             Assert.False(value);
         }
@@ -37,13 +38,13 @@ namespace Pins.Application.Test.Helper
         [TestCase("1230")]
         [TestCase("7890")]
         [TestCase("5554")]
-        public void Resolve_ValidPin(string PIN)
+        public async Task Resolve_ValidPin(string PIN)
         {
             //arrange
             var pinsRepository = Substitute.For<IPinsRepository>();
             pinsRepository.IsAnyByPIN("2340").Returns(true);
             //act
-            var value = IsNewPINValidHelper.Resolve(PIN, pinsRepository);
+            var value = await IsNewPINValidHelper.Resolve(PIN, pinsRepository);
             //assert
             Assert.IsTrue(value);
         }
