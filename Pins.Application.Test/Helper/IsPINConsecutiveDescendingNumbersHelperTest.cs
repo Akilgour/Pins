@@ -3,7 +3,7 @@ using Pins.Application.Helper;
 
 namespace Pins.Application.Test.Helper
 {
-    public class IsPINConsecutiveDescendingNumbersTest
+    public class IsPINConsecutiveDescendingNumbersHelperTest
     {
         [TestCase("9876")]
         [TestCase("8765")]
@@ -14,7 +14,7 @@ namespace Pins.Application.Test.Helper
             //arrange
 
             //act
-            var value = IsPINConsecutiveDescendingNumbers.Resolve(pin);
+            var value = IsPINConsecutiveDescendingNumbersHelpers.Resolve(pin);
             //assert
             Assert.IsTrue(value);
         }
@@ -28,7 +28,7 @@ namespace Pins.Application.Test.Helper
             //arrange
 
             //act
-            var value = IsPINConsecutiveDescendingNumbers.Resolve(pin);
+            var value = IsPINConsecutiveDescendingNumbersHelpers.Resolve(pin);
             //assert
             Assert.IsFalse(value);
         }

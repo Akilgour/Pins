@@ -3,7 +3,7 @@ using Pins.Application.Helper;
 
 namespace Pins.Application.Test.Helper
 {
-    public class IsPinSameFourDigitsTest
+    public class IsPinSameFourDigitsHelperTest
     {
         [TestCase("0000")]
         [TestCase("1111")]
@@ -14,7 +14,7 @@ namespace Pins.Application.Test.Helper
             //arrange
 
             //act
-            var value = IsPinSameFourDigits.Resolve(pin);
+            var value = IsPinSameFourDigitsHelper.Resolve(pin);
             //assert
             Assert.True(value);
         }
@@ -30,7 +30,7 @@ namespace Pins.Application.Test.Helper
             //arrange
 
             //act
-            var value = IsPinSameFourDigits.Resolve(pin);
+            var value = IsPinSameFourDigitsHelper.Resolve(pin);
             //assert
             Assert.IsFalse(value);
         }
