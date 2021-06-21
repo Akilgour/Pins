@@ -1,30 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using Pins.Application.Contracts.Service;
+using Pins.Model;
+using System.Threading.Tasks;
 using System.Web.Mvc;
 
 namespace Pins.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        private readonly IPinService pinService;
+
+        public HomeController(IPinService pinService)
         {
-            return View();
+            this.pinService = pinService;
         }
 
-        public ActionResult About()
+        public async Task<ActionResult> Index()
         {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
+     
+            return View(new NewPin(await pinService.Create()));
         }
     }
 }
