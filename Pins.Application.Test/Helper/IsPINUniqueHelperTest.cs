@@ -14,7 +14,7 @@ namespace Pins.Application.Test.Helper
         public async Task Resolve_SameFourDigitsAsync(string PIN, bool expected)
         {
             //arrange
-            var pinsRepository = Substitute.For<IPinsRepository>();
+            var pinsRepository = Substitute.For<IPinLogRepository>();
             pinsRepository.IsAnyByPIN("1234").Returns(true);
             pinsRepository.IsAnyByPIN("7890").Returns(false);
             //act

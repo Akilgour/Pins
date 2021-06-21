@@ -90,13 +90,21 @@
     <Compile Include="Migrations\202106202318011_PinLog_AddPinColumn.designer.cs">
       <DependentUpon>202106202318011_PinLog_AddPinColumn.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202106210043068_PinLog_RemoveId.cs" />
+    <Compile Include="Migrations\202106210043068_PinLog_RemoveId.designer.cs">
+      <DependentUpon>202106210043068_PinLog_RemoveId.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106210045043_PinLog_ChangeIdType.cs" />
+    <Compile Include="Migrations\202106210045043_PinLog_ChangeIdType.designer.cs">
+      <DependentUpon>202106210045043_PinLog_ChangeIdType.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\BaseModel.cs" />
     <Compile Include="Model\PinLog.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\BaseRepository.cs" />
-    <Compile Include="Repository\Interfaces\IPinsRepository.cs" />
-    <Compile Include="Repository\PinsRepository.cs" />
+    <Compile Include="Repository\Interfaces\IPinLogRepository.cs" />
+    <Compile Include="Repository\PinLogRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -111,6 +119,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202106202318011_PinLog_AddPinColumn.resx">
       <DependentUpon>202106202318011_PinLog_AddPinColumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106210043068_PinLog_RemoveId.resx">
+      <DependentUpon>202106210043068_PinLog_RemoveId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106210045043_PinLog_ChangeIdType.resx">
+      <DependentUpon>202106210045043_PinLog_ChangeIdType.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

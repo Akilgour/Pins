@@ -76,8 +76,13 @@
     <Compile Include="Helper\IsPINSameFourDigitsHelper.cs" />
     <Compile Include="Helper\IsPINUniqueHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\PinService.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Pins.Application.Contracts\Pins.Application.Contracts.csproj">
+      <Project>{EAD60F50-7AAA-4AEE-A0A4-0C932DEB4730}</Project>
+      <Name>Pins.Application.Contracts</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Pins.Domain\Pins.Domain.csproj">
       <Project>{0F76B4C0-24C0-402D-B60A-24AEC565D432}</Project>
       <Name>Pins.Domain</Name>

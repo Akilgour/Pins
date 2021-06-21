@@ -6,7 +6,7 @@ namespace Pins.Application.Factory
 {
     public class CreateNewPinFactory
     {
-        public static async Task<string> Resolve(IPinsRepository pinsRepository)
+        public static async Task<string> Resolve(IPinLogRepository pinsRepository)
         {
             string PIN;
             bool validPin;

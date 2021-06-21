@@ -9,7 +9,7 @@ namespace Pins.Domain.Model
         [Key]
         [Required]
         [Column(Order = 0)]
-        public Guid Id { get; set; }
+        public int Id { get; set; }
 
         [Required]
         public DateTime CreatedDate { get; set; }

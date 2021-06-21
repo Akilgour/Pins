@@ -24,7 +24,7 @@ namespace Pins.Application.Test.Helper
         public async Task Resolve_NotAValidPin(string PIN)
         {
             //arrange
-            var pinsRepository = Substitute.For<IPinsRepository>();
+            var pinsRepository = Substitute.For<IPinLogRepository>();
             pinsRepository.IsAnyByPIN("2340").Returns(true);
 
             //act
@@ -41,7 +41,7 @@ namespace Pins.Application.Test.Helper
         public async Task Resolve_ValidPin(string PIN)
         {
             //arrange
-            var pinsRepository = Substitute.For<IPinsRepository>();
+            var pinsRepository = Substitute.For<IPinLogRepository>();
             pinsRepository.IsAnyByPIN("2340").Returns(true);
             //act
             var value = await IsNewPINValidHelper.Resolve(PIN, pinsRepository);

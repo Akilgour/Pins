@@ -7,8 +7,7 @@ namespace Pins.Application.Factory
     {
         public static PinLog Resolve(string PIN)
         {
-        //    return new Pin() { PIN = PIN, CreatedDate = DateTime.UtcNow, LastModifiedDate = DateTime.UtcNow };
-            return new PinLog() {  CreatedDate = DateTime.UtcNow, LastModifiedDate = DateTime.UtcNow };
+                return new PinLog() { PIN = PIN, CreatedDate = DateTime.UtcNow, LastModifiedDate = DateTime.UtcNow };
         }
     }
 }

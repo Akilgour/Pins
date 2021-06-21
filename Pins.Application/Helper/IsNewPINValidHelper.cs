@@ -5,7 +5,7 @@ namespace Pins.Application.Helper
 {
     public class IsNewPINValidHelper
     {
-        public static async Task<bool> Resolve(string PIN, IPinsRepository pinsRepository)
+        public static async Task<bool> Resolve(string PIN, IPinLogRepository pinsRepository)
         {
             if (IsPINConsecutiveAccendingNumbersHelpers.Resolve(PIN) ||
                 IsPINConsecutiveDescendingNumbersHelpers.Resolve(PIN) ||
